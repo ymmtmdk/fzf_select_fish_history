@@ -11,3 +11,5 @@ function fzf_select_fish_history
         commandline $cmd
     end
 end
+
+bind ctrl-r fzf_select_fish_history
