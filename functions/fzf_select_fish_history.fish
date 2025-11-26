@@ -5,7 +5,7 @@ function fzf_select_fish_history
 
     # history save
     history merge
-    history | fzf | sed -e "s/.\{16\}//" | read cmd
+    history | fzf | read cmd
 
     if [ $cmd ]
         commandline $cmd
